@@ -1,0 +1,38 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 =
+/*#__PURE__*/
+React.createElement("path", {
+  fill: "currentColor",
+  fillRule: "evenodd",
+  d: "M11.859 1c-2.71 0-5.186 1.765-6.932 4.079C3.165 7.41 2 10.479 2 13.436 2 18.706 6.385 23 11.859 23s9.858-4.294 9.858-9.563c0-2.955-1.168-6.023-2.93-8.356C17.042 2.767 14.566 1 11.86 1z M18.14 7.186C16.62 4.764 14.346 3 12 3 7.884 3 4 8.409 4 13.287 4 17.515 7.534 21 12 21s8-3.485 8-7.713c0-1.968-.635-4.025-1.662-5.777l-1.47 1.927-2.417-1.218-2.034 1.005L10 7.861l2.383.57 2.126-1.33 2.127 1.151 1.505-1.066z",
+  clipRule: "evenodd"
+});
+
+var SvgEgg = function SvgEgg(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    fill: "none",
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = React.forwardRef(function (props, ref) {
+  return React.createElement(SvgEgg, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/Egg.7fe6a2ea.svg";
+export { ForwardRef as ReactComponent };

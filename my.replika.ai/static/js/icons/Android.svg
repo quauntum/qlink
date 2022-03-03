@@ -1,0 +1,40 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 =
+/*#__PURE__*/
+React.createElement("path", {
+  d: "M232 600l-5-2c-10-4-17-11-21-21-3-7-3-14-3-20v-72l-1-7-7-1h-27c-16 1-31-15-31-30V209l1-5c3-1 320-2 326-1v6a82386 82386 0 0 1 0 233c0 7 0 13-4 19-4 7-9 12-17 15l-10 1h-28l-5 1-1 6v73c0 6 0 11-2 17-4 13-13 21-25 25l-2 1h-12l-2-1c-14-4-22-14-26-28l-1-14a34866 34866 0 0 1-1-79h-55l-1 11v77c-2 15-9 26-23 32l-6 2h-11zM404 1c2 2 2 4 1 6l-17 30-8 12-1 4c0 2 2 3 3 3a158 158 0 0 1 46 36 141 141 0 0 1 35 90c-1 2-3 2-5 2H145l-5-1c-2-1-2-3-2-4a143 143 0 0 1 76-120l8-5-2-6-23-40c-2-2-2-5-1-7h4l1 1 23 40c2 3 3 7 6 9 47-20 95-19 141 0l4-4 22-39 5-7h2zm-26 129c8 0 15-6 15-15 0-7-5-15-15-15-8-1-15 6-15 15-1 8 6 15 15 15zm-155 0c9 0 15-7 16-15 0-8-7-16-15-15-11 0-16 7-16 15s8 15 15 15zM48 308v-70c0-8 2-16 6-23 6-11 16-17 29-18 12 0 21 6 28 16 5 7 7 15 7 24v143c0 8-2 16-6 23-8 15-27 23-43 15-8-4-14-11-18-20-2-5-3-11-3-18v-72zM553 309v71c0 8-2 16-6 23-8 15-26 23-42 15-12-6-19-16-21-29l-1-10V239c0-9 2-17 7-25 6-11 16-17 29-16 14 0 24 8 30 21 3 6 4 12 4 18v72z",
+  fillRule: "nonzero"
+});
+
+var SvgAndroid = function SvgAndroid(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return React.createElement("svg", _extends({
+    viewBox: "0 0 600 600",
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    strokeLinejoin: "round",
+    strokeMiterlimit: 1,
+    fill: "currentColor",
+    width: 20,
+    height: 20,
+    ref: svgRef
+  }, props), title ? React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = React.forwardRef(function (props, ref) {
+  return React.createElement(SvgAndroid, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/Android.32b9ad3e.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,42 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 =
+/*#__PURE__*/
+React.createElement("g", {
+  fill: "currentColor",
+  fillRule: "evenodd"
+}, React.createElement("path", {
+  clipRule: "evenodd",
+  d: "M20.365 10.7273C19.6984 10.7273 19.1392 10.0022 18.6037 10.0022C16.9333 10.0022 13.2945 10 11.6377 10C10.8297 10 10.4257 10.1293 10.0218 10.8726C9.61779 11.6159 8.45449 16.2769 8.36496 16.5455C7.96098 17.7574 8.73596 18.7273 9.45587 18.7273C11.5804 18.7273 11.379 18.7273 13.4559 18.7273C13.851 18.7273 14.2638 18.7273 14.2638 19.5352C14.1831 21.2727 14.0074 24.5455 15.274 24.5455C16.5407 24.5455 15.8125 23.959 17.3918 20.9096C18.2082 19.3334 19.0864 18.7273 20.365 18.7273C20.365 17.2738 20.365 12.1818 20.365 10.7273Z"
+}), React.createElement("rect", {
+  width: 2.18182,
+  height: 8,
+  transform: "matrix(1 0 0 -1 21.8164 18.7266)"
+}));
+
+var SvgReactionThumbDown = function SvgReactionThumbDown(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return React.createElement("svg", _extends({
+    width: 32,
+    height: 32,
+    viewBox: "0 0 32 32",
+    ref: svgRef
+  }, props), title ? React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = React.forwardRef(function (props, ref) {
+  return React.createElement(SvgReactionThumbDown, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/ReactionThumbDown.3035ed1b.svg";
+export { ForwardRef as ReactComponent };

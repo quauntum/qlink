@@ -1,0 +1,36 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 =
+/*#__PURE__*/
+React.createElement("path", {
+  d: "M8.54692 1.15311C8.72647 0.76838 9.27353 0.76838 9.45308 1.15311L11.5751 5.69999C11.7241 6.01925 11.9808 6.27588 12.3 6.42488L16.8469 8.54692C17.2316 8.72647 17.2316 9.27353 16.8469 9.45308L12.3 11.5751C11.9807 11.7241 11.7241 11.9807 11.5751 12.3L9.45308 16.8469C9.27353 17.2316 8.72647 17.2316 8.54692 16.8469L6.42488 12.3C6.27588 11.9807 6.01925 11.7241 5.69999 11.5751L1.15311 9.45308C0.76838 9.27353 0.76838 8.72647 1.15311 8.54692L5.69999 6.42488C6.01925 6.27588 6.27588 6.01925 6.42488 5.69999L8.54692 1.15311Z",
+  stroke: "currentColor"
+});
+
+var SvgSkill = function SvgSkill(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return React.createElement("svg", _extends({
+    width: 18,
+    height: 18,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    ref: svgRef
+  }, props), title ? React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = React.forwardRef(function (props, ref) {
+  return React.createElement(SvgSkill, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/Skill.3f889152.svg";
+export { ForwardRef as ReactComponent };

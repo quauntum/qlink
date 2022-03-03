@@ -1,0 +1,39 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 =
+/*#__PURE__*/
+React.createElement("path", {
+  clipRule: "evenodd",
+  d: "m21.90186,12.43513l1.04592,0.09673a1.05012,1.0401 0 0 0 -1.84296,-0.77383l0.79809,0.6771l-0.00105,0zm-10.29327,-10.19501l0.68468,0.78943a1.05012,1.0401 0 0 0 -0.78234,-1.82537l0.09766,1.03593zm9.49623,9.51687a6.23246,6.17297 0 0 1 -4.74339,2.16132l0,2.08019a8.33375,8.2542 0 0 0 6.33747,-2.88626l-1.59303,-1.3542l-0.00105,-0.00104zm-4.74339,2.16132a6.24926,6.18961 0 0 1 -6.24926,-6.19065l-2.10024,0a8.3495,8.2698 0 0 0 8.34845,8.27084l0,-2.08019l0.00105,0zm-6.24926,-6.19065c0,-1.87841 0.84325,-3.56129 2.1811,-4.69811l-1.36831,-1.5799a8.3327,8.25316 0 0 0 -2.91303,6.27698l2.10024,0l0,0.00104zm-6.01193,3.82755a8.3978,8.31764 0 0 1 7.60601,-8.27916l-0.19532,-2.07187c-5.33461,0.49301 -9.51093,4.93837 -9.51093,10.35207l2.10024,0l0,-0.00104zm8.39675,8.3166a8.39675,8.3166 0 0 1 -8.39675,-8.3166l-2.10024,0c0,5.74237 4.69928,10.39679 10.49699,10.39679l0,-2.08019zm8.35895,-7.53341a8.3978,8.31764 0 0 1 -8.35895,7.53341l0,2.08019c5.46482,0 9.95303,-4.13542 10.45079,-9.42014l-2.09079,-0.19346l-0.00105,0z",
+  fill: "currentColor",
+  fillRule: "nonzero",
+  id: "svg_1"
+});
+
+var SvgMoon = function SvgMoon(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    ref: svgRef
+  }, props), title ? React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = React.forwardRef(function (props, ref) {
+  return React.createElement(SvgMoon, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/Moon.55f303db.svg";
+export { ForwardRef as ReactComponent };

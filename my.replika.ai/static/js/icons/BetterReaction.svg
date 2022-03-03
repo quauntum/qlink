@@ -1,0 +1,42 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 =
+/*#__PURE__*/
+React.createElement("g", null, React.createElement("path", {
+  fill: "#029E4A",
+  d: "M35 17.5C35 27.165 27.165 35 17.5 35S0 27.165 0 17.5 7.835 0 17.5 0 35 7.835 35 17.5"
+}), React.createElement("path", {
+  stroke: "#010202",
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  d: "M10 23.011C11.76 24.224 14.462 25 17.492 25c3.039 0 5.748-.781 7.508-2",
+  opacity: 0.5
+}), React.createElement("path", {
+  fill: "#010202",
+  d: "M14.476 17.644C13.796 17.24 12.936 17 12 17c-.591 0-1.153.096-1.658.269A4.594 4.594 0 0 1 10 15.5c0-1.933 1.119-3.5 2.5-3.5 1.38 0 2.5 1.567 2.5 3.5 0 .808-.195 1.551-.524 2.144zM25.658 17.269A5.133 5.133 0 0 0 24 17c-.935 0-1.795.24-2.476.644-.329-.592-.524-1.336-.524-2.144 0-1.933 1.119-3.5 2.5-3.5 1.38 0 2.5 1.567 2.5 3.5 0 .645-.125 1.25-.342 1.769z"
+}));
+
+var SvgBetterReaction = function SvgBetterReaction(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return React.createElement("svg", _extends({
+    viewBox: "0 0 35 35",
+    ref: svgRef
+  }, props), title ? React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = React.forwardRef(function (props, ref) {
+  return React.createElement(SvgBetterReaction, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/BetterReaction.23e103f8.svg";
+export { ForwardRef as ReactComponent };

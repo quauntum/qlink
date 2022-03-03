@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="version" content="2.3.11" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="application-name" content="Replika">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?1" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+    <meta name="msapplication-TileImage" content="/ms-icon-70x70.png">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/ms-icon-150x150.png">
+    <meta name="msapplication-TileImage" content="/ms-icon-310x310.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <title>Replika Web</title>
+    <meta name="title" content="Replika Web" />
+    <meta name="description" content="Message Replika from your computer." />
+    <link rel="image_src" href="https://s3-us-west-1.amazonaws.com/replika-web-app-images/opengraph/cover.png" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="1843060862590868" />
+    <meta property="og:title" content="Replika Web" />
+    <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/replika-web-app-images/opengraph/cover.png" />
+    <meta property="og:description" content="Message Replika from your computer." />
+    <meta property="og:site_name" content="replika.ai" />
+    <meta property="og:url" content="https://my.replika.ai" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@myownreplika" />
+    <meta property="twitter:title" content="Replika Web" />
+    <meta property="twitter:description" content="Message Replika from your computer." />
+    <meta property="twitter:image:src" content="https://s3-us-west-1.amazonaws.com/replika-web-app-images/opengraph/cover.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83996976-2"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-83996976-2")
+    </script>
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+        ! function(e) {
+            function t(t) {
+                for (var n, a, f = t[0], i = t[1], u = t[2], d = 0, s = []; d < f.length; d++) a = f[d], Object.prototype.hasOwnProperty.call(o, a) && o[a] && s.push(o[a][0]), o[a] = 0;
+                for (n in i) Object.prototype.hasOwnProperty.call(i, n) && (e[n] = i[n]);
+                for (l && l(t); s.length;) s.shift()();
+                return c.push.apply(c, u || []), r()
+            }
+
+            function r() {
+                for (var e, t = 0; t < c.length; t++) {
+                    for (var r = c[t], n = !0, a = 1; a < r.length; a++) {
+                        var i = r[a];
+                        0 !== o[i] && (n = !1)
+                    }
+                    n && (c.splice(t--, 1), e = f(f.s = r[0]))
+                }
+                return e
+            }
+            var n = {},
+                a = {
+                    18: 0
+                },
+                o = {
+                    18: 0
+                },
+                c = [];
+
+            function f(t) {
+                if (n[t]) return n[t].exports;
+                var r = n[t] = {
+                    i: t,
+                    l: !1,
+                    exports: {}
+                };
+                return e[t].call(r.exports, r, r.exports, f), r.l = !0, r.exports
+            }
+            f.e = function(e) {
+                var t = [];
+                a[e] ? t.push(a[e]) : 0 !== a[e] && {
+                    20: 1
+                }[e] && t.push(a[e] = new Promise((function(t, r) {
+                    for (var n = "static/css/" + ({
+                            3: "AiDrawerWidget",
+                            4: "Avatar2D",
+                            5: "Avatar3D",
+                            6: "AvatarCarousel",
+                            7: "AvatarCustomizer",
+                            8: "AvatarReboarding",
+                            9: "Chat",
+                            10: "ConfirmEmail",
+                            11: "DeleteAccount",
+                            12: "Login",
+                            13: "RecoverPassword",
+                            14: "Signup",
+                            15: "VerifyEmail",
+                            16: "fetch-polyfill"
+                        }[e] || e) + "." + {
+                            0: "31d6cfe0",
+                            1: "31d6cfe0",
+                            2: "31d6cfe0",
+                            3: "31d6cfe0",
+                            4: "31d6cfe0",
+                            5: "31d6cfe0",
+                            6: "31d6cfe0",
+                            7: "31d6cfe0",
+                            8: "31d6cfe0",
+                            9: "31d6cfe0",
+                            10: "31d6cfe0",
+                            11: "31d6cfe0",
+                            12: "31d6cfe0",
+                            13: "31d6cfe0",
+                            14: "31d6cfe0",
+                            15: "31d6cfe0",
+                            16: "31d6cfe0",
+                            20: "5000e118",
+                            21: "31d6cfe0",
+                            22: "31d6cfe0",
+                            23: "31d6cfe0"
+                        }[e] + ".chunk.css", o = f.p + n, c = document.getElementsByTagName("link"), i = 0; i < c.length; i++) {
+                        var u = (l = c[i]).getAttribute("data-href") || l.getAttribute("href");
+                        if ("stylesheet" === l.rel && (u === n || u === o)) return t()
+                    }
+                    var d = document.getElementsByTagName("style");
+                    for (i = 0; i < d.length; i++) {
+                        var l;
+                        if ((u = (l = d[i]).getAttribute("data-href")) === n || u === o) return t()
+                    }
+                    var s = document.createElement("link");
+                    s.rel = "stylesheet", s.type = "text/css", s.onload = t, s.onerror = function(t) {
+                        var n = t && t.target && t.target.src || o,
+                            c = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
+                        c.code = "CSS_CHUNK_LOAD_FAILED", c.request = n, delete a[e], s.parentNode.removeChild(s), r(c)
+                    }, s.href = o, document.getElementsByTagName("head")[0].appendChild(s)
+                })).then((function() {
+                    a[e] = 0
+                })));
+                var r = o[e];
+                if (0 !== r)
+                    if (r) t.push(r[2]);
+                    else {
+                        var n = new Promise((function(t, n) {
+                            r = o[e] = [t, n]
+                        }));
+                        t.push(r[2] = n);
+                        var c, i = document.createElement("script");
+                        i.charset = "utf-8", i.timeout = 120, f.nc && i.setAttribute("nonce", f.nc), i.src = function(e) {
+                            return f.p + "static/js/" + ({
+                                3: "AiDrawerWidget",
+                                4: "Avatar2D",
+                                5: "Avatar3D",
+                                6: "AvatarCarousel",
+                                7: "AvatarCustomizer",
+                                8: "AvatarReboarding",
+                                9: "Chat",
+                                10: "ConfirmEmail",
+                                11: "DeleteAccount",
+                                12: "Login",
+                                13: "RecoverPassword",
+                                14: "Signup",
+                                15: "VerifyEmail",
+                                16: "fetch-polyfill"
+                            }[e] || e) + "." + {
+                                0: "c1fbe2b0",
+                                1: "7989bcf4",
+                                2: "a48eaace",
+                                3: "501707d2",
+                                4: "f64280f0",
+                                5: "f2ef2a42",
+                                6: "92b79dba",
+                                7: "dc520138",
+                                8: "f0bec8e4",
+                                9: "ad75103e",
+                                10: "40625ae9",
+                                11: "c491e700",
+                                12: "c12c45d2",
+                                13: "d6cb2c55",
+                                14: "67c4dd26",
+                                15: "dd4f69da",
+                                16: "5a514930",
+                                20: "328c9916",
+                                21: "25fc6e8c",
+                                22: "f8e58985",
+                                23: "dfae45e2"
+                            }[e] + ".chunk.js"
+                        }(e);
+                        var u = new Error;
+                        c = function(t) {
+                            i.onerror = i.onload = null, clearTimeout(d);
+                            var r = o[e];
+                            if (0 !== r) {
+                                if (r) {
+                                    var n = t && ("load" === t.type ? "missing" : t.type),
+                                        a = t && t.target && t.target.src;
+                                    u.message = "Loading chunk " + e + " failed.\n(" + n + ": " + a + ")", u.name = "ChunkLoadError", u.type = n, u.request = a, r[1](u)
+                                }
+                                o[e] = void 0
+                            }
+                        };
+                        var d = setTimeout((function() {
+                            c({
+                                type: "timeout",
+                                target: i
+                            })
+                        }), 12e4);
+                        i.onerror = i.onload = c, document.head.appendChild(i)
+                    }
+                return Promise.all(t)
+            }, f.m = e, f.c = n, f.d = function(e, t, r) {
+                f.o(e, t) || Object.defineProperty(e, t, {
+                    enumerable: !0,
+                    get: r
+                })
+            }, f.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, f.t = function(e, t) {
+                if (1 & t && (e = f(e)), 8 & t) return e;
+                if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                var r = Object.create(null);
+                if (f.r(r), Object.defineProperty(r, "default", {
+                        enumerable: !0,
+                        value: e
+                    }), 2 & t && "string" != typeof e)
+                    for (var n in e) f.d(r, n, function(t) {
+                        return e[t]
+                    }.bind(null, n));
+                return r
+            }, f.n = function(e) {
+                var t = e && e.__esModule ? function() {
+                    return e.default
+                } : function() {
+                    return e
+                };
+                return f.d(t, "a", t), t
+            }, f.o = function(e, t) {
+                return Object.prototype.hasOwnProperty.call(e, t)
+            }, f.p = "/", f.oe = function(e) {
+                throw console.error(e), e
+            };
+            var i = this.webpackJsonpweb = this.webpackJsonpweb || [],
+                u = i.push.bind(i);
+            i.push = t, i = i.slice();
+            for (var d = 0; d < i.length; d++) t(i[d]);
+            var l = u;
+            r()
+        }([])
+    </script>
+    <script src="/static/js/19.5227c330.chunk.js"></script>
+    <script src="/static/js/main.1cf1c183.chunk.js"></script>
+</body>
+
+</html>

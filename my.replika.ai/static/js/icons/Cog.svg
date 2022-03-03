@@ -1,0 +1,39 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 =
+/*#__PURE__*/
+React.createElement("g", {
+  fillRule: "evenodd"
+}, React.createElement("path", {
+  fill: "currentColor",
+  d: "M18.272 4.21a9.84 9.84 0 0 1 1.51 1.512l-2.277 3.997 4.438 1.217a9.855 9.855 0 0 1-.002 2.145l-4.428 1.203 2.282 3.982c-.445.551-.95 1.06-1.51 1.512l-4.005-2.273-1.221 4.438a9.904 9.904 0 0 1-2.14-.002l-1.204-4.443-3.99 2.287a9.839 9.839 0 0 1-1.507-1.507l2.278-3.998-4.438-1.217a9.842 9.842 0 0 1 .001-2.144l4.434-1.201-2.287-3.984a9.903 9.903 0 0 1 1.516-1.516l3.999 2.276 1.215-4.438c.721-.076 1.44-.074 2.148.002l1.202 4.44 3.986-2.288zm-2.578 6.26a3.999 3.999 0 1 0-7.388 3.06 3.999 3.999 0 0 0 7.388-3.06z"
+}), React.createElement("path", {
+  fill: "currentColor",
+  fillRule: "nonzero",
+  d: "M10.086 7.382a5 5 0 0 0 3.828 9.236 5 5 0 0 0-3.828-9.236zm8.38 1.94a7 7 0 0 1-12.932 5.357A7 7 0 0 1 18.466 9.32l-.924.383.924-.383z"
+}));
+
+var SvgCog = function SvgCog(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return React.createElement("svg", _extends({
+    viewBox: "0 0 24 24",
+    ref: svgRef
+  }, props), title ? React.createElement("title", null, title) : null, _ref2);
+};
+
+var ForwardRef = React.forwardRef(function (props, ref) {
+  return React.createElement(SvgCog, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/Cog.4d3deb20.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,76 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 =
+/*#__PURE__*/
+React.createElement("rect", {
+  x: 4,
+  y: 3,
+  width: 16,
+  height: 18,
+  rx: 2,
+  stroke: "currentColor",
+  strokeWidth: 2,
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+});
+
+var _ref3 =
+/*#__PURE__*/
+React.createElement("line", {
+  x1: 8,
+  y1: 18,
+  x2: 8,
+  y2: 12,
+  stroke: "currentColor",
+  strokeWidth: 2
+});
+
+var _ref4 =
+/*#__PURE__*/
+React.createElement("line", {
+  x1: 12,
+  y1: 18,
+  x2: 12,
+  y2: 10,
+  stroke: "currentColor",
+  strokeWidth: 2
+});
+
+var _ref5 =
+/*#__PURE__*/
+React.createElement("line", {
+  x1: 16,
+  y1: 18,
+  x2: 16,
+  y2: 6,
+  stroke: "currentColor",
+  strokeWidth: 2
+});
+
+var SvgStats = function SvgStats(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    ref: svgRef
+  }, props), title ? React.createElement("title", null, title) : null, _ref2, _ref3, _ref4, _ref5);
+};
+
+var ForwardRef = React.forwardRef(function (props, ref) {
+  return React.createElement(SvgStats, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/Stats.e0135449.svg";
+export { ForwardRef as ReactComponent };
